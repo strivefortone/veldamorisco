@@ -80,57 +80,20 @@
           </div>
 
           <div>
-            <h2>Contact Form</h2>
-            <p class="mb-lg">Alternatively, send an enquiry using the form below and I will respond within a few business days.</p>
+            <h2>Send an Enquiry</h2>
+            <p class="mb-lg">The simplest way to reach me is by email. Tell me a little about what brings you, and I will respond within a few business days.</p>
 
             <!--
-              Contact form wired for Formspree (works on GitHub Pages / any static host).
-              SETUP REQUIRED: create a free form at https://formspree.io, then replace
-              REPLACE_WITH_FORMSPREE_ID below with your form ID (e.g. xyzabcd).
-              Set the destination inbox inside the Formspree dashboard.
-              Alternative (no signup): replace the whole <form> with a mailto link:
-                <a class="btn btn--primary" href="mailto:VELDA_EMAIL?subject=Website%20enquiry">Email an enquiry</a>
+              Enquiries go by email (no third-party form service — keeps enquiry
+              content private and the site dependency-free).
+              To switch the address later (e.g. to contact@veldamorisco.com),
+              change both mailto: links below.
             -->
-            <form
-              name="contact"
-              action="https://formspree.io/f/REPLACE_WITH_FORMSPREE_ID"
-              method="POST"
-              class="contact-form"
-            >
-              <!-- Honeypot field for spam protection (Formspree silently drops _gotcha submissions) -->
-              <p class="visually-hidden" aria-hidden="true">
-                <label>Don't fill this out if you're human: <input name="_gotcha" tabindex="-1" autocomplete="off"></label>
-              </p>
+            <p>
+              <a class="btn btn--primary" href="mailto:vsmorisco@gmail.com?subject=Website%20enquiry">Email an Enquiry</a>
+            </p>
 
-              <!-- Subject line shown in Velda's inbox -->
-              <input type="hidden" name="_subject" value="New enquiry from veldamorisco.com">
-              <!-- After submit, return visitors here (optional; remove to use Formspree's default page) -->
-              <input type="hidden" name="_next" value="https://veldamorisco.com/pages/contact.html">
-
-              <div class="form-group">
-                <label for="name">Name</label>
-                <input type="text" id="name" name="name" required>
-              </div>
-
-              <div class="form-group">
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" required>
-              </div>
-
-              <div class="form-group">
-                <label for="phone">Phone (optional)</label>
-                <input type="tel" id="phone" name="phone">
-              </div>
-
-              <div class="form-group">
-                <label for="message">Message</label>
-                <textarea id="message" name="message" required placeholder="Please briefly describe your enquiry..."></textarea>
-              </div>
-
-              <button type="submit" class="btn btn--primary">Send Enquiry</button>
-
-              <p class="form-note">I aim to respond within a few business days.</p>
-            </form>
+            <p class="form-note">Or write directly to <a href="mailto:vsmorisco@gmail.com">vsmorisco@gmail.com</a></p>
           </div>
         </div>
       </div>
